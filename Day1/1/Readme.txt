@@ -31,7 +31,7 @@
 output
 
 Module                  Size  Used by
-simplemodule           12488  0 
+simplemodule           12488  0
 rfcomm                 69552  2 
 fuse                   91880  3 
 xt_CHECKSUM            12549  1 
