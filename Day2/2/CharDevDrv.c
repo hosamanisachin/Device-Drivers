@@ -140,6 +140,15 @@ static int __init s_init(void)
 		return(-1);
 	}
 
+	cdev_init(&my_char_dev,&s_fops);
+	if(cdev_add(&my_char_dev,first,1)==-1)
+	{
+		device_destroy(my_device_class_ptr,first);
+		class_destroy(my_device_class_ptr);
+		unregister_chrdev_region(first,1);
+		return(-1);
+	}
+	
 	printk(KERN_INFO "Welcome by SJH: Linux Character Device Driver is Successfully Registered. \n");
 	return(0);
 }
