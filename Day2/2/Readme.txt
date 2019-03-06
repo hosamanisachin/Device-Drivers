@@ -105,6 +105,15 @@ output
 243 SJH
 
 9) Write a .c file to test our device driver functions and later check kernel log to find out what our device was doing
+=========================================================
+output
+
+After device writing operation, the device contents: 
+ My Name Is SACHIN JAGADISH HOSAMANI: SJH
+File pointer is positioned at 16 
+After deivce seeking and reading operations, the buffer contents : 
+ N JAGADISH HOSAMANI: SJH 
+
 
 8) To remove 
 	rmmod CharDevDrv.ko
